@@ -1,0 +1,9 @@
+﻿<#@ template language="C#" #>
+<#@ import namespace="CommonHtml" #>
+
+<div class="content-container">
+    <#= NoteParts.NoteTitleLinkDiv(DbEntry) #>
+    <#= Tags.PostBodyDiv(DbEntry) #>
+    <#=
+                BodyContentReferences.RelatedContentTag(DbEntry.ContentId, "").Result #>
+</div>

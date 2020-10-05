@@ -1,0 +1,893 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-CO" class="wide wow-animation">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon" />
+
+    <asp:ContentPlaceHolder ID="ContentHeadTop" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <title>Precisur</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900" />
+    <link rel="stylesheet" href="~/content/css/bootstrap-4.1.3.min.css" />
+    <link rel="stylesheet" href="~/content/css/style.css" />
+    <link rel="stylesheet" href="~/content/css/mdi.css" />
+    <link rel="stylesheet" href="~/content/css/fl-bigmug-line.css" />
+
+    <asp:ContentPlaceHolder ID="ContentHeadCSS" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentHeadJS" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentHead" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+
+    <!-- Page preloader-->
+    <div class="page-loader">
+        <div class="page-loader-body">
+            <div class="page-loader__logo">
+                <img src="./content/img/template/logo-precisur-220x40.png" alt="" width="143" height="36" />
+            </div>
+            <div class="preloader-wrapper big active">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+        <!-- Page Header-->
+        <header class="section page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap rd-navbar-corporate">
+                <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-xxl-stick-up-offset="130px" data-md-stick-up-offset="100px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                    <div class="rd-navbar-top-card rd-navbar-collapse">
+                        <div class="rd-navbar-top-card-inner">
+                            <ul class="list-inline">
+                                <li class="box-inline"><span class="icon icon-md-smaller icon-gray-light mdi mdi-phone"></span>
+                                    <ul class="list-comma">
+                                        <li><a href="tel:+5717559146" data-rel="external">(+57) 1 7559146</a></li>
+                                        <li><a href="tel:+573183385446" data-rel="external">(+57) 3183385446</a></li>
+                                    </ul>
+                                </li>
+                                <li class="box-inline"><span class="icon icon-md-smaller icon-gray-light mdi mdi-map-marker"></span><a href="#">Calle 80 #69-70 Bodega 15 Bogotá, Colombia</a></li>
+                                <li class="box-inline"><span class="icon icon-md-smaller icon-gray-light mdi mdi-email"></span><a href="mailto:ventas@precisur.com.co" data-rel="external">ventas@precisur.com.co</a></li>
+                            </ul>
+                            <ul class="list-inline">
+                                <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-facebook d-none" href="#"></a></li>
+                                <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-twitter d-none" href="#"></a></li>
+                                <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="https://www.instagram.com/precisur_col/"></a></li>
+                                <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="https://www.linkedin.com/company/precisursas/"></a></li>
+                            </ul>
+                        </div>
+                        <div class="rd-navbar-top-card-inner"><a class="button button-sm button-secondary" href="#">Book a truck</a></div>
+                    </div>
+                    <div class="rd-navbar-inner">
+                        <!-- RD Navbar card-->
+                        <div class="rd-navbar-card">
+                            <!-- RD Navbar Toggle-->
+                            <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                            <!-- RD Navbar Brand-->
+                            <div class="rd-navbar-brand">
+                                <a class="brand-name" href="index.html">
+                                    <img class="logo-default" src="./content/img/template/logo-precisur-220x40.png" alt="" width="220" height="40" /></a>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-aside-center">
+                            <div class="rd-navbar-nav-wrap">
+                                <!-- RD Navbar Nav-->
+                                <ul class="rd-navbar-nav">
+                                    <li class="active"><a href="/">Inicio</a>
+                                    </li>
+
+                                    <li><a href="#acercade">Sobre Nosotros</a>
+                                    </li>
+
+                                    <li><a href="#marcas">Marcas</a>
+                                    </li>
+
+                                    <li><a href="#servicios">Servicios</a>
+                                    </li>
+
+
+                                    <li><a href="#soluciones">Soluciones</a>
+                                    </li>
+
+                                    <li><a href="#">Industrias</a>
+
+                                        <ul class="rd-navbar-dropdown">
+
+                                            <li><a href="#">Alimenticia</a>
+                                            </li>
+                                            <li><a href="#">Fabricación Discreta</a>
+                                            </li>
+                                            <li><a href="#">Fabricantes Productos OEM</a>
+                                            </li>
+                                            <li><a href="#">Farmacéutica</a>
+                                            </li>
+                                            <li><a href="#">Química</a>
+                                            </li>
+                                            <li><a href="#">Petroquímica</a>
+                                            </li>
+                                            <li><a href="#">Minería</a>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#">Recursos</a>
+
+                                        <ul class="rd-navbar-dropdown">
+                                            <li><a href="#">Casos de Exito</a></li>
+                                            <li><a href="#">Brochures</a></li>
+                                            <li><a href="#">Manuales</a></li>
+                                            <li><a href="#">Fichas Técnicas</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                    <li><a href="#contacto">Contáctenos</a>
+
+                                        <ul class="rd-navbar-dropdown">
+
+                                            <li><a href="#contacto">Contácto</a></li>
+                                            <li><a href="#">PQRS</a></li>
+
+                                            <li><a href="#">Encuestas de Satisfacción</a>
+
+                                                <ul class="rd-navbar-dropdown">
+
+                                                    <li><a href="#contacto">Contácto</a></li>
+
+                                                    <li><a href="#">PQRS</a></li>
+
+                                                </ul>
+                                            </li>
+
+
+                                        </ul>
+                                    </li>
+
+
+                                    <li class="rd-navbar--has-megamenu rd-navbar-submenu">
+                                        <a href="#">Contáctenos</a><span class="rd-navbar-submenu-toggle"></span>
+                                        <!-- RD Navbar Megamenu-->
+                                        <ul class="rd-navbar-megamenu rd-navbar-open-right">
+                                            <li>
+                                                <ul class="rd-megamenu-list">
+                                                    <li><a href="#contacto">Contácto</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="rd-megamenu-list">
+                                                    <li><a href="#">Pedidos Quejas y Reclamos PQR</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="rd-megamenu-list">
+                                                    <li>Encuestas de Satisfacción</li>
+                                                    <li><a href="https://es.surveymonkey.com/r/serviciosmetrologicos">Servicios Metrológicos</a></li>
+                                                    <li><a href="https://es.surveymonkey.com/r/GNCD2K6">Servicio Técnico</a></li>
+                                                    <li><a href="https://precisur.com.co/encuesta-de-satisfaccion/#eluidf9fa08fe">Satisfacción Comercial</a></li>
+
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <ul class="rd-megamenu-list">
+                                                    <li><a href="tabs.html">Tabs</a></li>
+                                                    <li><a href="typography.html">Typography</a></li>
+                                                    <li><a href="radials.html">Radials</a></li>
+                                                    <li><a href="pricing.html">Pricing</a></li>
+                                                    <li><a href="tooltips.html">Tooltips</a></li>
+                                                    <li><a href="search-results.html">Search Results</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="rd-navbar-aside-right-inner">
+                            </div>
+                        </div>
+                        <div class="rd-navbar-aside-right"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- slider-->
+        <section class="section">
+            <div class="swiper-form-wrap">
+                <!-- Swiper-->
+                <div class="swiper-container swiper-slider swiper-slider_height-1 swiper-align-left context-dark" data-loop="false" data-autoplay="5500" data-simulate-touch="false" data-slide-effect="fade">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" data-slide-bg="./content/img/template/landing-trucking-slider-1.jpg">
+                            <div class="swiper-slide-caption">
+                                <div class="container container-bigger swiper-main-section">
+                                    <div class="row justify-content-sm-center justify-content-md-start row-ten">
+                                        <div class="col-md-6 col-lg-4 col-xxl-3">
+                                            <h3 data-caption-animate="fxBlurInRight" data-caption-delay="50">Seguridad, calidad, profesionalismo</h3>
+                                            <p class="heading-5" data-caption-animate="fxBlurInRight" data-caption-delay="350">Proveemos a nuestros clientes con las mejores herramientas para el pesaje en la industria y los servicios de transporte.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-bg="./content/img/template/landing-trucking-slider-2.jpg">
+                            <div class="swiper-slide-caption">
+                                <div class="container container-bigger swiper-main-section">
+                                    <div class="row justify-content-sm-center justify-content-md-start row-ten">
+                                        <div class="col-md-6 col-lg-4 col-xxl-3">
+                                            <h3 data-caption-animate="fxBlurInRight" data-caption-delay="50">Marcas en las que puedes confiar</h3>
+                                            <p class="heading-5" data-caption-animate="fxBlurInRight" data-caption-delay="350">Trabajamos en Colombia con las mejores marcas a nivel mundial.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-slide-bg="./content/img/template/landing-trucking-slider-3.jpg">
+                            <div class="swiper-slide-caption">
+                                <div class="container container-bigger swiper-main-section">
+                                    <div class="row justify-content-sm-center justify-content-md-start row-ten">
+                                        <div class="col-md-6 col-lg-4 col-xxl-3">
+                                            <h3 data-caption-animate="fxBlurInRight" data-caption-delay="50">Facilidad en nuestros sistemas</h3>
+                                            <p class="heading-5" data-caption-animate="fxBlurInRight" data-caption-delay="350">Con nuestros sistemas puedes estar al día con los ultimos adelantos en la industria del pesaje industrial.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper controls-->
+                    <div class="swiper-pagination-wrap">
+                        <div class="container container-bigger">
+                            <div class="row row-ten">
+                                <div class="col-sm-12">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container container-bigger form-request-wrap">
+                    <div class="row justify-content-sm-center justify-content-lg-end row-ten">
+                        <div class="col-lg-4 col-xxl-3">
+                            <div class="form-request">
+                                <h4>SOLICITA UNA COTIZACION</h4>
+
+                                <p>
+                                    Si tienes alguna inquietud, entra en contácto con nosotros y te responderemos lo mas pronto posible.                                  
+                                </p>
+                                <div class="rd-mailform">
+                                    <div class="form-wrap form-button">
+                                        <a class="button button-block button-primary" onclick="alert('ACA ABRE EL FORMULARIO MAILERLITE')"><i class="mdi mdi-account-multiple"></i>Comenzar...</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Soluciones-->
+        <section class="section section-lg bg-default text-center">
+
+            <a id="soluciones"></a>
+
+            <div class="container">
+                <div class="row justify-content-sm-center">
+                    <div class="col-md-10 col-xl-8">
+
+                        <h2>Soluciones</h2>
+                        <div class="table-novi table-custom-responsive">
+                            <table class="table-custom table-color-header">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Area</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Ambiente Agresivo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Riesgo de Explosión EX</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Automatización, Integración y Conectividad</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Conteo de partes y piezas</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Control estadístico de calidad</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Dimensionamiento y pesaje</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Llenado dosificación (Filling)</a></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>8</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Pesaje a granel - Repetitivo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Chekweighers</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Formulación preparación de lotes y recetas</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Sobra – Falta (overunder)</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Tanques, tolvas, silos, reactores y contenedores</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Trazabilidad</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Porcionado</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Clasificación de rangos por peso</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Fraccionamiento manual y guiado</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Transporte y Logística</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Chequeadores de Peso</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Detectores de Metales</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td><a href="#"><i class="icon mdi mdi-link"></i>Inspección de Rayos X</a></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Services-->
+        <section class="section section-lg text-center bg-default">
+
+            <a id="servicios"></a>
+
+            <div class="container-wide">
+
+                <h3>Nuestros Servicios</h3>
+
+                <div class="isotope-wrap row row-0">
+
+                    <div class="col-xl-12">
+                        <div class="isotope isotope-titled-gallery" style="position: relative; height: 480px;">
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-01-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">Actualización y Adecuación de Balanzas</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-02-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">Calibración y calidad</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-03-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">GWP Verification</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-04-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">Mantenimiento de Balanzas</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-05-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">Monitoreo a distancia de equipos</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 col-lg-4 isotope-item">
+                                <div class="gallery-item title-inside-gallery-item img-thumbnail">
+                                    <div class="gallery-item-image">
+                                        <figure>
+                                            <img src="./content/img/template/title-inside-gallery-06-640x430.jpg" alt="" width="640" height="430" />
+                                        </figure>
+                                        <div class="title-inside-gallery-caption">
+                                            <a class="title-inside-gallery-title" href="#">Servicio y asistencia técnica</a>
+                                            <p class="title-inside-gallery-text">Servicio de calidad, eficiente y rapido en Colombia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <!-- a few words about us-->
+        <section class="section section-lg bg-gray-lighter">
+
+            <a id="acercade"></a>
+
+            <div class="container container-bigger">
+                <div class="row row-ten row-50 justify-content-md-center align-items-lg-center justify-content-xl-between flex-xl-row-reverse">
+                    <div class="col-md-9 col-lg-5 col-xxl-4 text-gray-light">
+                        <h3>Acerca de Nosotros</h3>
+                        <div class="divider divider-default"></div>
+
+                        <p class="heading-5">En PRECISUR estamos encaminados a la comercialización, fabricación, asesoramiento y soporte técnico de soluciones de pesaje industrial.</p>
+
+                        <p>
+                            Somos una empresa orientada a suministrar soluciones basadas en sistemas de pesaje de alto valor agregado a la industria colombiana, soportados por la más alta tecnología, contando con asesoría especializada y soporte técnico, ofreciendo experiencia, seguridad y confiabilidad.
+Nuestros procesos, procedimientos y productos tienen como foco principal la actividad de nuestros clientes, tratando de asegurar su desarrollo y crecimiento, convirtiéndonos en socios permanentes para poder trabajar en un ámbito de cordialidad y confianza que sea de beneficio mutuo.
+                        </p>
+
+                        <a class="button button-default-outline" href="#">Conocer mas...</a>
+                    </div>
+                    <div class="col-md-9 col-lg-5">
+                        <img src="./content/img/template/landing-trucking-07-720x459.jpg" alt="" width="720" height="459" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--our advantages-->
+        <section class="section section-lg text-center">
+
+            <a id="marcas"></a>
+
+            <div class="container-wide">
+                <h3>Marcas con que trabajamos</h3>
+                <div class="divider divider-default"></div>
+                <div class="row row-50 justify-content-sm-center">
+
+                    <div class="col-sm-10 col-md-6 col-xl-3">
+                        <article class="box-minimal-modern">
+                            <div class="box-minimal-icon">
+                                <img class="rounded-circle" src="./content/img/template/logo-mettler-80x80.png" width="80" height="80" />
+                            </div>
+
+                            <h6 class="box-minimal-title">METTLER TOLEDO</h6>
+                            <div class="box-minimal-text">
+                                Instrumentos de precisión y servicios para el laboratorio y los procesos de fabricación. Soluciones de pesaje, analíticas y de inspección a través de toda la cadena de valor. Pipetas y Puntas RAININ. Transporte y Logística. AutoChem. Células de Carga.
+                               <a class="button button-block button-primary" href="#">Comenzar <i class="mdi mdi-arrow-right-bold-hexagon-outline"></i></a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-3">
+                        <article class="box-minimal-modern">
+                            <div class="box-minimal-icon">
+                                <img class="rounded-circle" src="./content/img/template/logo-kretz-80x80.png" width="80" height="80" />
+                            </div>
+                            <h6 class="box-minimal-title">KRETZ</h6>
+                            <div class="box-minimal-text">
+                                Empresa líder en el desarrollo de balanzas electrónicas en Latinoamerica.
+                               <a class="button button-block button-primary" href="#">Comenzar <i class="mdi mdi-arrow-right-bold-hexagon-outline"></i></a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-3">
+                        <article class="box-minimal-modern">
+                            <div class="box-minimal-icon">
+                                <img class="rounded-circle" src="./content/img/template/logo-loma-80x80.png" width="80" height="80" />
+                            </div>
+                            <h6 class="box-minimal-title">Loma Systems</h6>
+                            <div class="box-minimal-text">
+                                Equipos de inspección "Check & Detect", detectores de metales, comprobadores de peso y sistemas de inspección por rayos X.
+                                                              
+                                <a class="button button-block button-primary" href="#">Comenzar <i class="mdi mdi-arrow-right-bold-hexagon-outline"></i></a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-sm-10 col-md-6 col-xl-3">
+                        <article class="box-minimal-modern">
+                            <div class="box-minimal-icon">
+                                <img class="rounded-circle" src="./content/img/template/logo-iwim-80x80.png" width="80" height="80" />
+                            </div>
+                            <h6 class="box-minimal-title">iWIM</h6>
+                            <div class="box-minimal-text">
+                                Sensores aplicados a la infraestructura de transporte. Sistemas capaces de pesar vehículos en movimiento con características de calidad y alta precisión. 
+
+                               <a class="button button-block button-primary" href="#">Comenzar <i class="mdi mdi-arrow-right-bold-hexagon-outline"></i></a>
+
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- do you need a consultation?-->
+        <section class="section section-md bg-gradient-1 text-center text-md-left">
+            <div class="container-wide">
+                <div class="row row-50 justify-content-sm-center">
+                    <div class="col-xxl-8">
+                        <div class="box-cta box-cta-inline">
+                            <div class="box-cta-inner">
+                                <h3 class="box-cta-title">Necesitas una asesoria?</h3>
+                                <p>Precisur te entrega muchas ventajas de las cuales te puedes beneficiar.</p>
+                            </div>
+                            <div class="box-cta-inner"><a class="button button-secondary" href="#contacto">Contactanos</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Icon carousel-->
+        <section class="section section-2-columns bg-gray-lighter bg-additional-gray-darker">
+            <div class="container-custom">
+                <div class="row justify-content-md-center align-items-lg-center justify-content-xl-start row-0">
+                    <div class="col-md-10 col-lg-6">
+
+                        <div class="section-lg">
+                            <div class="container-custom-inner">
+                                <h3>Testimonios</h3>
+                                <hr class="divider divider-default">
+                                <!-- Slick Carousel-->
+                                <div class="slider-widget">
+                                    <div class="slick-slider" id="slick-1" data-autoplay="true" data-arrows="true" data-loop="true" data-dots="false" data-swipe="false" data-items="1" data-custom-arrows="true">
+                                        <div class="item">
+                                            <article class="quote-classic">
+                                                <div class="quote-classic-header">
+                                                    <img class="quote-classic-image" src="./content/img/template/quote-user-2-210x210.jpg" alt="" width="210" height="210" />
+                                                    <div class="quote-classic-meta">
+                                                        <p class="quote-classic-cite">Mary McMillan</p>
+                                                        <p class="quote-classic-small">Regular customer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="quote-classic-text">
+                                                    <p>Express is more than a transportation company, they are a professional family. They have given us an opportunity to build and grow our business throughout years of dedicated partnership and loyalty that still remain unrivaled.</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="item">
+                                            <article class="quote-classic">
+                                                <div class="quote-classic-header">
+                                                    <img class="quote-classic-image" src="./content/img/template/quote-user-1-210x210.jpg" alt="" width="210" height="210" />
+                                                    <div class="quote-classic-meta">
+                                                        <p class="quote-classic-cite">James Smith</p>
+                                                        <p class="quote-classic-small">Regular customer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="quote-classic-text">
+                                                    <p>For the past 5 years, Express has been a great partner and absolutely vital in the development of our international shipping business. They have an excellent track record of picking up and delivering our loads on time without issue.</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                        <div class="item">
+                                            <article class="quote-classic">
+                                                <div class="quote-classic-header">
+                                                    <img class="quote-classic-image" src="./content/img/template/quote-user-3-210x210.jpg" alt="" width="210" height="210" />
+                                                    <div class="quote-classic-meta">
+                                                        <p class="quote-classic-cite">Morgan McMillan</p>
+                                                        <p class="quote-classic-small">Regular customer</p>
+                                                    </div>
+                                                </div>
+                                                <div class="quote-classic-text">
+                                                    <p>Express has proven to be a very dependable trucking company. This is highlighted by their excellent communication and sense of urgency on every shipment. I would recommend them to anybody looking for great rates and greater services.</p>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="slider-widget-aside">
+                                        <div class="icon icon-lg-smaller mdi mdi-format-quote"></div>
+                                        <div class="slider-nav">
+                                            <button class="slick-prev mdi mdi-arrow-left-bold-circle" type="button" data-slick="slick-1"></button>
+                                            <button class="slick-next mdi mdi-arrow-right-bold-circle" type="button" data-slick="slick-1"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 bg-additional-item">
+                        <div class="section-lg">
+                            <div class="container-custom-inner container-custom-inner-1 text-center">
+                                <div class="row row-120">
+                                    <div class="col-sm-6 col-md-3 col-lg-6">
+                                        <div class="counter-wrap">
+                                            <span class="icon icon-secondary mdi mdi-weight"></span>
+                                            <div class="heading-3"><span class="counter" data-speed="1000">62000</span><span class="counter-preffix">+</span></div>
+                                            <p>Unidades Vendidas</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-6">
+                                        <div class="counter-wrap">
+                                            <span class="icon icon-secondary mdi mdi-account-multiple-outline"></span>
+                                            <div class="heading-3"><span class="counter" data-step="3000">246000</span></div>
+                                            <p>Clientes Satisfechos</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-6">
+                                        <div class="counter-wrap">
+                                            <span class="icon icon-secondary mdi mdi-clock"></span>
+                                            <div class="heading-3"><span class="counter" data-step="3000">1200</span></div>
+                                            <p>Horas de servicio</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3 col-lg-6">
+                                        <div class="counter-wrap">
+                                            <span class="icon icon-secondary mdi mdi-weight-kilogram"></span>
+                                            <div class="heading-3"><span class="counter" data-step="3000">12000</span></div>
+                                            <p>Soluciones Construidas</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-wrap section-reverse bg-default">
+
+            <a id="contacto"></a>
+
+            <div class="section-wrap-inner section-lg">
+                <div class="container container-bigger">
+                    <div class="row row-50">
+                        <div class="col-lg-6 col-xxl-5 text-lg-left">
+                            <div class="section-wrap-content">
+                                <h3>Información de Contacto</h3>
+                                <div class="divider divider-default"></div>
+                                <p class="text-spacing-sm">
+                                    Puedes contactarnos de la forma en que sea mas conveniente para tí.
+                                    Estamos disponibles 24/7 via email. Puedes visitarnos personalmente en nuestras oficinas con cita previa.
+                                </p>
+                                <ul class="list-xs list-darker">
+                                    <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                                        <div>
+                                            <a class="text-spacing-sm" href="https://goo.gl/maps/bYox2mHmjsesBZEP7" target="_blank">Calle 80 # 69 - 70 Bodega 15 Bogotá, Colombia</a>
+
+                                        </div>
+                                    </li>
+                                    <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                                        <ul class="list-comma">
+                                            <li><a class="text-spacing-sm" href="tel:+5717559146" data-rel="external">(+57) 1 755 9146 </a></li>
+                                            <li><a class="text-spacing-sm" href="tel:+573183385446" data-rel="external">(+57) 318 338 5446</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-email-open"></span><a class="text-spacing-sm" href="mailto:ventas@precisur.com.co" data-rel="external">ventas@precisur.com.co</a></li>
+                                </ul>
+                                <ul class="list-inline-md">
+                                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-facebook d-none" href="#"></a></li>
+                                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-twitter d-none" href="#"></a></li>
+                                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-instagram" href="https://www.instagram.com/precisur_col/"></a></li>
+                                    <li><a class="icon icon-sm-bigger icon-gray-1 mdi mdi-linkedin" href="https://www.linkedin.com/company/precisursas/"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-wrap-aside section-wrap-aside-custom">
+                    <!-- Google Map-->
+                    <div class="google-map-container">
+
+                        <a href="https://goo.gl/maps/bYox2mHmjsesBZEP7" target="_blank">
+                            <img class="google-map img-thumbnail rounded" src="./content/img/template/google-maps.webp" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Page Footer-->
+        <!-- Footer Minimal -->
+        <footer class="section page-footer page-footer-minimal text-center bg-gray-darker">
+            <div class="container container-wide">
+                <div class="row justify-content-sm-center align-items-md-center row-30">
+                    <div class="col-md-10 col-lg-7 col-xl-4 text-xl-left">
+                        <a href="index.html">
+                            <img class="default-logo" src="./content/img/template/logo-precisur-220x40.png" alt="" width="220" height="40" /><img class="inverse-logo" src="./content/img/template/logo-precisur-220x40.png" alt="" width="143" height="36" /></a>
+                    </div>
+                    <div class="col-md-10 col-lg-7 col-xl-4">
+                        <p class="right">&#169;&nbsp;<span class="copyright-year"></span> Todos los derechos reservados Precisur SAS | <a href="https://softcanon.com" target="_blank">Powered by Softcanon</a> | <a href="https://javiercanon.com" target="_blank">Developed by JC</a></p>
+                    </div>
+                    <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">
+                        <ul class="group-xs group-middle">
+                            <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-facebook d-none" href="#"></a></li>
+                            <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-twitter d-none" href="#"></a></li>
+                            <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-instagram" href="https://www.instagram.com/precisur_col/"></a></li>
+                            <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-linkedin" href="https://www.linkedin.com/company/precisursas/"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Global Mailform Output
+    <div class="snackbars" id="form-output-global"></div> -->
+
+    <asp:ContentPlaceHolder ID="ContentBodyTop" runat="server">
+    </asp:ContentPlaceHolder>
+    <form id="form1" runat="server">
+        <asp:ContentPlaceHolder ID="ContentHeader" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="ContentMenu" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="ContentMain" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <asp:ContentPlaceHolder ID="ContentFooter" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <asp:ContentPlaceHolder ID="ContentBodyBottom" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="ContentBodyJS" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <script src="<%: ResolveUrl("~/content/js/jquery-3.4.1.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/content/js/bootstrap-4.1.3.bundle.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/content/js/core.min.js") %>"></script>
+    <script src="<%: ResolveUrl("~/content/js/script.js") %>"></script>
+
+    <%-- 
+    <asp:SqlDataSource runat="server" ID="SqlDatasourceMain" EnableCaching="true" CacheDuration="300"
+        CacheExpirationPolicy="Sliding" CacheKeyDependency="SqlDatasourceMain"
+        ConnectionString='<%$ ConnectionStrings:MsSqlServer.Main %>' SelectCommand="SELECT * FROM [CMSPage] WHERE (([Catagory] = @Catagory) AND ([SubCategory] = @SubCategory) AND ([Title] = @Title))">
+        <SelectParameters>
+            <asp:QueryStringParameter QueryStringField="cat" Name="Catagory" Type="String"></asp:QueryStringParameter>
+            <asp:QueryStringParameter QueryStringField="sub" Name="SubCategory" Type="String"></asp:QueryStringParameter>
+            <asp:QueryStringParameter QueryStringField="pag" Name="Title" Type="String"></asp:QueryStringParameter>
+        </SelectParameters>
+    </asp:SqlDataSource>
+    --%>
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <!-- Site Title-->
+    <title>Tabs</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script><link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mdi.css">
+    <link rel="stylesheet" href="css/fl-bigmug-line.css">
+		<!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="https://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-card/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+  </head>
+  <body>
+    <!-- Page preloader-->
+    <div class="page-loader">
+      <div class="page-loader-body">
+        <div class="page-loader__logo"><img src="images/logo-default-143x36.png" alt="" width="143" height="36"/>
+        </div>
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Page-->
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap rd-navbar-corporate">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-md-stick-up-offset="1px" data-lg-stick-up-offset="1px" data-stick-up="true" data-sm-stick-up="true" data-md-stick-up="true" data-lg-stick-up="true">
+            <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+            <div class="rd-navbar-inner">
+              <!-- RD Navbar card-->
+              <div class="rd-navbar-card">
+                <!-- RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!-- RD Navbar Brand-->
+                <div class="rd-navbar-brand"><a class="brand-name" href="index.html"><img class="logo-default" src="images/logo-default-143x36.png" alt="" width="143" height="36"/><img class="logo-inverse" src="images/logo-inverse-143x36.png" alt="" width="143" height="36"/></a></div>
+              </div>
+              <div class="rd-navbar-aside-center">
+                <div class="rd-navbar-nav-wrap">
+                  <!-- RD Navbar Nav-->
+                  <ul class="rd-navbar-nav">
+                    <li><a href="index.html">Home</a>
+                    </li>
+                    <li><a href="about-us.html">About Us</a>
+                    </li>
+                    <li><a href="#">Gallery</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="grid-gallery.html">Grid Gallery</a>
+                        </li>
+                        <li><a href="grid-album-gallery.html">Grid Album Gallery</a>
+                        </li>
+                        <li><a href="fullwidth-gallery.html">Fullwidth Gallery</a>
+                        </li>
+                        <li><a href="single-project.html">Single Project</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Blog</a>
+                      <!-- RD Navbar Dropdown-->
+                      <ul class="rd-navbar-dropdown">
+                        <li><a href="classic-blog.html">Classic Blog</a>
+                        </li>
+                        <li><a href="grid-blog.html">Grid Blog</a>
+                        </li>
+                        <li><a href="masonry-blog.html">Masonry Blog</a>
+                        </li>
+                        <li><a href="modern-blog.html">Modern Blog</a>
+                        </li>
+                        <li><a href="audio-post.html">Audio Post</a>
+                        </li>
+                        <li><a href="image-post.html">Image Post</a>
+                        </li>
+                        <li><a href="single-post.html">Single Post</a>
+                        </li>
+                        <li><a href="video-post.html">Video Post</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="active"><a href="#">Pages</a>
+                      <!-- RD Navbar Megamenu-->
+                      <ul class="rd-navbar-megamenu">
+                        <li>
+                          <ul class="rd-megamenu-list">
+                            <li><a href="about-me.html">About Me</a></li>
+                            <li><a href="our-history.html">Our History</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="single-service.html">Single Service</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="single-job.html">Single Job</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="rd-megamenu-list">
+                            <li><a href="login-page.html">Login Page</a></li>
+                            <li><a href="registration-page.html">Registration Page</a></li>
+                            <li><a href="pricing-page.html">Pricing Page</a></li>
+                            <li><a href="404-page.html">404 Page</a></li>
+                            <li><a href="503-page.html">503 Page</a></li>
+                            <li><a href="coming-soon.html">Coming Soon</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="rd-megamenu-list">
+                            <li><a href="under-construction.html">Under Construction</a></li>
+                            <li><a href="accordions.html">Accordions</a></li>
+                            <li><a href="forms.html">Forms</a></li>
+                            <li><a href="countdown.html">Countdown</a></li>
+                            <li><a href="grid-system.html">Grid System</a></li>
+                            <li><a href="tables.html">Tables</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="rd-megamenu-list">
+                            <li><a href="tabs.html">Tabs</a></li>
+                            <li><a href="typography.html">Typography</a></li>
+                            <li><a href="radials.html">Radials</a></li>
+                            <li><a href="pricing.html">Pricing</a></li>
+                            <li><a href="tooltips.html">Tooltips</a></li>
+                            <li><a href="search-results.html">Search Results</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="contacts.html">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rd-navbar-aside-right-inner">
+                  <!-- RD Navbar Search-->
+                  <div class="rd-navbar-search"><a class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search" href="#"><span></span></a>
+                    <form class="rd-search" action="search-results.html" data-search-live="rd-search-results-live" method="GET">
+                      <div class="form-wrap">
+                        <label class="form-label form-label" for="rd-navbar-search-form-input">Search...</label>
+                        <input class="rd-navbar-search-form-input form-input" id="rd-navbar-search-form-input" type="text" name="s" autocomplete="off"/>
+                        <div class="rd-search-results-live"></div>
+                      </div>
+                      <button class="rd-search-form-submit mdi mdi-magnify"></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="rd-navbar-aside-right rd-navbar-collapse text-right"><a class="button button-sm button-secondary" href="#">Book a truck</a></div>
+            </div>
+          </nav>
+        </div>
+        <!-- Breadcrumbs-->
+        <section class="breadcrumbs-custom breadcrumbs-custom-svg">
+          <div class="container">
+            <p class="breadcrumbs-custom-subtitle">Choose Your Style</p>
+            <p class="heading-1 breadcrumbs-custom-title">Tabs</p>
+            <ul class="breadcrumbs-custom-path">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Pages</a></li>
+              <li class="active">Tabs</li>
+            </ul>
+          </div>
+        </section>
+
+      </header>
+      <!-- Standard tabs-->
+      <section class="section section-lg bg-default text-center">
+        <!-- section wave-->
+        <div class="container">
+          <h3>Standard tabs</h3>
+          <div class="row row-50 justify-content-lg-center">
+            <div class="col-lg-10 col-xl-8">
+              <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active" href="#tabs-1-1" data-toggle="tab">Overview</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-1-2" data-toggle="tab">Founder</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-1-3" data-toggle="tab">Mission</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-1-1">
+                    <h5>Brave is an innovative web solution, which combines captivating design and flawless functionality in a multipurpose HTML template.</h5>
+                    <p>Made to be used by anyone who is looking for a stunning multifunctional website, this template is a universal solution, which can be used already after being installed. It differs from other similar projects in everything - be it the initial concept or the final look. Brave also can boast the set of powerful features that can be used by anyone without being afraid to overload their site.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-2">
+                    <!-- Card info-->
+                    <article class="card-info">
+                      <div class="card-info-aside"><img class="card-info-image" src="images/roy-henry-150x150.jpg" alt="" width="150" height="150"/>
+                      </div>
+                      <div class="card-info-main">
+                        <h5 class="card-info-title">Roy Henry</h5>
+                        <p class="card-info-subtitle">Founder</p>
+                        <p>Roy is the main person behind Brave. He is the multitalented manager and a former UX designer who is a true mine of creative ideas for everyone at our team.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-1-3">
+                    <div class="box-width-2">
+                      <p>In the digital age, we are marketing ourselves on the web.  That is why we aim to make it as easy and affordable for everyone to take charge of their web presence.  Words like tweet and yelp should be part of your marketing campaign, and not part of your stress.</p>
+                      <!-- Quote minimal-->
+                      <article class="quote-minimal">
+                        <p class="quote-minimal-text">We strive to create a memorable web image for everyone.</p>
+                      </article>
+                      <p>We establish a relationship with all of our clients, and we feel it is our responsibility to help them grow and harness the opportunity of their presence on the Internet.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Small tabs-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Small tabs</h3>
+          <div class="row row-50 justify-content-md-center">
+            <div class="col-md-9 col-lg-8 col-xl-6">
+              <div class="tabs-custom tabs-horizontal tabs-line tabs-line-small tabs-line-secondary" id="tabs-2">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active" href="#tabs-2-1" data-toggle="tab">San Diego</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-2-2" data-toggle="tab">New York</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-2-3" data-toggle="tab">Chicago</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-2-4" data-toggle="tab">Los Angeles</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-2-1">
+                    <ul class="list-xs list-darker">
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                        <div><a href="#">2130 Fulton Street, San Diego, CA 94117-1080 USA</a></div>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                        <ul class="list-comma">
+                          <li><a href="tel:#">1-800-1234-567</a></li>
+                          <li><a href="tel:#">1-800-6780-345</a></li>
+                        </ul>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-email-open"></span>
+                        <div><a href="mailto:#">mail@demolink.org</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-2">
+                    <ul class="list-xs list-darker">
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                        <div><a href="#">2130 Fulton Street, New York, NY 94117-1080 USA</a></div>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                        <ul class="list-comma">
+                          <li><a href="tel:#">1-800-0987-654</a></li>
+                          <li><a href="tel:#">1-800-0987-654</a></li>
+                        </ul>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-email-open"></span>
+                        <div><a href="mailto:#">newyork@demolink.org</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-3">
+                    <ul class="list-xs list-darker">
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                        <div><a href="#">2130 Fulton Street, Chicago, IL 94117-1080 USA</a></div>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                        <ul class="list-comma">
+                          <li><a href="tel:#">1-800-6543-765</a></li>
+                          <li><a href="tel:#">1-800-3434-876</a></li>
+                        </ul>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-email-open"></span>
+                        <div><a href="mailto:#">chicago@demolink.org</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-2-4">
+                    <ul class="list-xs list-darker">
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-map-marker"></span>
+                        <div><a href="#">2130 Fulton Street, Los Angeles, CA 94117 USA</a></div>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-phone"></span>
+                        <ul class="list-comma">
+                          <li><a href="tel:#">1-800-6543-765</a></li>
+                          <li><a href="tel:#">1-800-3434-876</a></li>
+                        </ul>
+                      </li>
+                      <li class="box-inline"><span class="icon icon-md-smaller icon-secondary mdi mdi-email-open"></span>
+                        <div><a href="mailto:#">losangeles@demolink.org</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vertical tabs-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Vertical tabs</h3>
+          <div class="row row-50 justify-content-lg-center">
+            <div class="col-lg-10 col-xl-8">
+              <div class="tabs-custom tabs-vertical tabs-line" id="tabs-3">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active" href="#tabs-3-1" data-toggle="tab">Overview</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-3-2" data-toggle="tab">Founder</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#tabs-3-3" data-toggle="tab">Mission</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-3-1">
+                    <h5>Brave is an innovative web solution, which combines captivating design and flawless functionality in a multipurpose HTML template.</h5>
+                    <p>Made to be used by anyone who is looking for a stunning multifunctional website, this template is a universal solution, which can be used already after being installed. It differs from other similar projects in everything - be it the initial concept or the final look. Brave also can boast the set of powerful features that can be used by anyone without being afraid to overload their site.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-3-2">
+                    <!-- Card info-->
+                    <article class="card-info">
+                      <div class="card-info-aside"><img class="card-info-image" src="images/roy-henry-150x150.jpg" alt="" width="150" height="150"/>
+                      </div>
+                      <div class="card-info-main">
+                        <h5 class="card-info-title">Roy Henry</h5>
+                        <p class="card-info-subtitle">Founder</p>
+                        <p>Roy is the main person behind Brave. He is the multitalented manager and a former UX designer who is a true mine of creative ideas for everyone at our team.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-3-3">
+                    <div class="box-width-2">
+                      <p>In the digital age, we are marketing ourselves on the web.  That is why we aim to make it as easy and affordable for everyone to take charge of their web presence.  Words like tweet and yelp should be part of your marketing campaign, and not part of your stress.</p>
+                      <!-- Quote minimal-->
+                      <article class="quote-minimal">
+                        <p class="quote-minimal-text">We strive to create a memorable web image for everyone.</p>
+                      </article>
+                      <p>We establish a relationship with all of our clients, and we feel it is our responsibility to help them grow and harness the opportunity of their presence on the Internet.</p><a class="button button-default-outline button-nina" href="#">learn more</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Horizontal button tabs-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Horizontal button tabs</h3>
+          <div class="row row-50 justify-content-md-center">
+            <div class="col-md-9 col-lg-8 col-xl-6">
+              <div class="tabs-custom tabs-horizontal tabs-buttons" id="tabs-4">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active button-nina" href="#tabs-4-1" data-toggle="tab">Tab 1</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-4-2" data-toggle="tab">Tab 2</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-4-3" data-toggle="tab">Tab 3</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-4-4" data-toggle="tab">Tab 4</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-4-1">
+                    <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our page.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-4-2">
+                    <p>The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-4-3">
+                    <p>We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-4-4">
+                    <p>We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vertical button tabs-->
+      <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <h3>Vertical button tabs</h3>
+          <div class="row row-50 justify-content-md-center">
+            <div class="col-md-9 col-lg-8 col-xl-6">
+              <div class="tabs-custom tabs-vertical tabs-buttons" id="tabs-5">
+                <!-- Nav tabs-->
+                <ul class="nav nav-tabs">
+                  <li class="nav-item"><a class="nav-link active button-nina" href="#tabs-5-1" data-toggle="tab">Tab 1</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-5-2" data-toggle="tab">Tab 2</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-5-3" data-toggle="tab">Tab 3</a></li>
+                  <li class="nav-item"><a class="nav-link button-nina" href="#tabs-5-4" data-toggle="tab">Tab 4</a></li>
+                </ul>
+                <!-- Tab panes-->
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="tabs-5-1">
+                    <p>Welcome to our wonderful world. We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our page.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-5-2">
+                    <p>The layout is aesthetically appealing, contains concise texts in order not to take your precious time. Text styling allows scanning the pages quickly. Site navigation is extremely intuitive and user-friendly. You will always know where you are now.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-5-3">
+                    <p>We use only trusted, verified content, so you can believe every word we are saying. We are always happy to greet the new visitors on our site. Our blog and social media accounts are available to encourage communication and connection between clients and personnel.</p>
+                  </div>
+                  <div class="tab-pane fade" id="tabs-5-4">
+                    <p>We sincerely hope that each and every user entering our website will find exactly what he/she is looking for. With advanced features of activating account and new login widgets, you will definitely have a great experience of using our web page.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page Footer-->
+      <!-- Footer Minimal -->
+      <footer class="section page-footer page-footer-minimal text-center bg-gray-darker">
+        <div class="container container-wide">
+          <div class="row justify-content-sm-center align-items-md-center row-30">
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-left"><a href="index.html"><img class="default-logo" src="images/logo-default-143x36.png" alt="" width="143" height="36"/><img class="inverse-logo" src="images/logo-inverse-143x36.png" alt="" width="143" height="36"/></a></div>
+            <div class="col-md-10 col-lg-7 col-xl-4">
+              <p class="right">&#169;&nbsp;<span class="copyright-year"></span> All Rights Reserved&nbsp;<a href="#">Terms of Use</a>&nbsp;and&nbsp;<a href="privacy-policy.html">Privacy Policy</a></p>
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">
+              <ul class="group-xs group-middle">
+                <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-facebook" href="#"></a></li>
+                <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-twitter" href="#"></a></li>
+                <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-instagram" href="#"></a></li>
+                <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-google" href="#"></a></li>
+                <li><a class="icon icon-md-middle icon-circle icon-secondary-5-filled mdi mdi-linkedin" href="#"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- Global Mailform Output-->
+    <div class="snackbars" id="form-output-global"></div>
+    <!-- Javascript-->
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+</html>
