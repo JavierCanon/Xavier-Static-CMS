@@ -1,5 +1,0 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BlogMaster.master.cs" Inherits="Web4CRM.Themes.CMS._1.BlogMaster" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentHead" runat="server">
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentBody" runat="server">
-</asp:Content>
