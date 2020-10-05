@@ -74,8 +74,9 @@ While with dynamic sites it’s common to have unexpected traffic peaks that cra
 - [x] Database Cache
 - [x] Speed and scalability
 
-![Screenshoot(docs/images/Screenshot-2020-10-04-194653.jpg)](https://www.youtube.com/watch?v=1I_q1jXzS58)
-![Screenshoot(docs/images/screencapture-precisur-2020-10-04.png)](https://precisur.com.co)
+![https://www.youtube.com/watch?v=1I_q1jXzS58](https://www.youtube.com/watch?v=1I_q1jXzS58)
+![Screenshoot](docs/images/screencapture-precisur-2020-10-04.png)
+
 
 ## Philosophy of Javier Cañon
 
