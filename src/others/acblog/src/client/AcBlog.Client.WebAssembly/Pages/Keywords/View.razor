@@ -1,0 +1,91 @@
+﻿@page "/keywords/{id}"
+@page "/keywords/{id}/pages/{pageNumber:int}"
+@using AcBlog.Data.Models.Builders
+@inherits BaseKeywordPage
+@inject AcBlog.Sdk.Filters.PostKeywordFilter Keywords
+
+<PageHeader>
+    <PageHeaderTitle> @(Keyword.OneNameOrDefault()) </PageHeaderTitle>
+    <PageHeaderBreadcrumb>
+        <Breadcrumb>
+            <BreadcrumbItem>
+                <a href="">
+                    <MdiIcon Type="home" />
+                    <span>Home</span>
+                </a>
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+                <a href="keywords">
+                    <MdiIcon Type="tag-multiple" />
+                    <span>Keywords</span>
+                </a>
+            </BreadcrumbItem>
+            <BreadcrumbItem>
+                <span>@(Keyword.OneNameOrDefault())</span>
+            </BreadcrumbItem>
+        </Breadcrumb>
+    </PageHeaderBreadcrumb>
+</PageHeader>
+
+<div class="container">
+    <Loader OnLoad="@OnLoad" AutoLoad="@false" @ref="loader">
+        <PagingList Data="@Data" Column="1" OnUpdatePage="@OnUpdatePage" OnPageTo="@OnPageTo" PageNavigationUrl="@PageNavigationUrl">
+            <ItemTemplate>
+                <PostListItem Id="@context" ShowType="true"></PostListItem>
+            </ItemTemplate>
+        </PagingList>
+    </Loader>
+</div>
+
+@code {
+    const int PageSize = 10;
+
+    QueryResponse<string> Data { get; set; }
+
+    [Parameter]
+    public string Id { get; set; }
+
+    [Parameter]
+    public int? PageNumber { get; set; } = null;
+
+    private Keyword Keyword = Keyword.Empty;
+
+    private Loader loader;
+
+    private string PageNavigationUrl;
+
+    protected override void OnParametersSet()
+    {
+        PageNavigationUrl = $"/keywords/{HttpUtility.UrlEncode(Id)}";
+        Keyword = AcBlog.Data.Models.Keyword.Parse(Id);
+        if (Keyword.Items.Count > 1)
+        {
+            Keyword = new Keyword(Keyword.OneName());
+        }
+        base.OnParametersSet();
+    }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await loader.Load();
+    }
+
+    private async Task OnLoad()
+    {
+        Title = "Loading...";
+        Data = await Keywords.Filter(Keyword, new Data.Models.Actions.Pagination
+        {
+            CurrentPage = PageNumber ?? 0,
+            PageSize = PageSize
+        });
+        Title = $"Page {Data.CurrentPage.CurrentPage + 1} - {Keyword.ToString()}";
+    }
+
+    private async Task OnPageTo(int pageNumber)
+    {
+        PageNumber = pageNumber;
+        await OnUpdatePage();
+    }
+
+    private async Task OnUpdatePage() => await loader.Load();
+}

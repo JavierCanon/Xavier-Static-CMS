@@ -1,0 +1,227 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Platforms>AnyCPU;x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AngleSharp" Version="1.0.0-alpha-825" />
+    <PackageReference Include="AngleSharp.Js" Version="0.14.0" />
+    <PackageReference Include="ClosedXML" Version="0.95.3" />
+    <PackageReference Include="CompareNETObjects" Version="4.66.0" />
+    <PackageReference Include="FluentMigrator" Version="3.2.7" />
+    <PackageReference Include="FluentMigrator.Runner" Version="3.2.7" />
+    <PackageReference Include="FluentMigrator.Runner.SQLite" Version="3.2.7" />
+    <PackageReference Include="GeoAPI" Version="1.7.5" />
+    <PackageReference Include="GitInfo" Version="2.0.26">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="HtmlTags" Version="8.0.0" />
+    <PackageReference Include="Markdig" Version="0.18.3" />
+    <PackageReference Include="MetadataExtractor" Version="2.4.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
+    <PackageReference Include="NetTopologySuite" Version="2.0.0" />
+    <PackageReference Include="NetTopologySuite.IO.GPX" Version="1.1.0" />
+    <PackageReference Include="ObjectDumper.NET" Version="2.5.20158.1-pre" />
+    <PackageReference Include="PhotoSauce.MagicScaler" Version="0.11.1" />
+    <PackageReference Include="pinboard.net" Version="1.0.0" />
+    <PackageReference Include="ReSharper.Annotations" Version="7.1.3.130415" />
+    <PackageReference Include="System.CodeDom" Version="5.0.0-preview.3.20214.6" />
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.1" />
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="System.ServiceModel.Syndication" Version="5.0.0-preview.3.20214.6" />
+    <PackageReference Include="System.Text.Json" Version="5.0.0-preview.3.20214.6" />
+    <PackageReference Include="TinyIpc" Version="2.1.0" />
+    <PackageReference Include="ValueInjecter" Version="3.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Html\FileHtml\SingleFileDiv.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleFileDiv.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.FileHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\FileHtml\SingleFilePage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleFilePage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.FileHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\ImageHtml\SingleImageDiv.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleImageDiv.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.ImageHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\ImageHtml\SingleImagePage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleImagePage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.ImageHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\IndexHtml\IndexPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>IndexPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.IndexHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\SearchListHtml\SearchListPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SearchListPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.SearchListHtml</CustomToolNamespace>
+    </None>
+    <None Update="Json\DbImport.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DbImport.cs</LastGenOutput>
+    </None>
+    <None Update="Html\LinkListHtml\LinkListPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>LinkListPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.LinkListHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\NoteHtml\SingleNoteDiv.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleNoteDiv.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.NoteHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\NoteHtml\SingleNotePage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SingleNotePage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.NoteHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PhotoGalleryHtml\CameraRollGalleryPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>CameraRollGalleryPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PhotoGalleryHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PhotoGalleryHtml\DailyPhotosPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>DailyPhotosPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PhotoGalleryHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PhotoHtml\SinglePhotoDiv.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SinglePhotoDiv.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PhotoHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PostHtml\SinglePostDiv.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SinglePostDiv.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PostHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PostHtml\SinglePostPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SinglePostPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PostHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\PhotoHtml\SinglePhotoPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>SinglePhotoPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.PhotoHtml</CustomToolNamespace>
+    </None>
+    <None Update="Html\TagListHtml\TagListPage.tt">
+      <Generator>TextTemplatingFilePreprocessor</Generator>
+      <LastGenOutput>TagListPage.cs</LastGenOutput>
+      <CustomToolNamespace>PointlessWaymarksCmsData.Html.TagListHtml</CustomToolNamespace>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Html\FileHtml\SingleFileDiv.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleFileDiv.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\FileHtml\SingleFilePage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleFilePage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\ImageHtml\SingleImageDiv.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleImageDiv.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\ImageHtml\SingleImagePage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleImagePage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\IndexHtml\IndexPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IndexPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Json\DbImport.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DbImport.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\LinkListHtml\LinkListPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LinkListPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\NoteHtml\SingleNoteDiv.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleNoteDiv.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\NoteHtml\SingleNotePage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SingleNotePage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PhotoGalleryHtml\CameraRollGalleryPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CameraRollGalleryPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PhotoGalleryHtml\DailyPhotosPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DailyPhotosPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PhotoHtml\SinglePhotoDiv.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SinglePhotoDiv.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PostHtml\SinglePostDiv.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SinglePostDiv.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PostHtml\SinglePostPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SinglePostPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\PhotoHtml\SinglePhotoPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SinglePhotoPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\SearchListHtml\SearchListPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>SearchListPage.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Html\TagListHtml\TagListPage.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TagListPage.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="PointlessWaymarksCmsData.BuildDateAttribute">
+      <_Parameter1>$([System.DateTime]::UtcNow.ToString("yyyyMMddHHmmss"))</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

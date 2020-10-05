@@ -1,0 +1,73 @@
+﻿<UserControl
+    x:Class="PointlessWaymarksCmsWpfControls.PhotoList.PhotoListWithActionsControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:PointlessWaymarksCmsWpfControls.PhotoList"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:status="clr-namespace:PointlessWaymarksCmsWpfControls.Status"
+    d:DataContext="{d:DesignInstance local:PhotoListWithActionsContext}"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    mc:Ignorable="d">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../WpfControlsResourceDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Reports">
+                <MenuItem Header="No Tags" Command="{Binding ReportNoTagsCommand}"/>
+                <MenuItem Header="Title and Photo Created Don't Match" Command="{Binding ReportTitleAndTakenDoNotMatchCommand}"/>
+                <MenuItem Header="License is Blank" Command="{Binding ReportBlankLicenseCommand}"/>
+                <MenuItem Header="License Year and Taken Year Don't Match" Command="{Binding ReportTakenAndLicenseYearDoNotMatchCommand}"/>
+                <MenuItem Header="All Photos" Command="{Binding ReportAllPhotosCommand}"/>
+                <MenuItem Header="Selected - Metadata to Html" Command="{Binding ReportPhotoMetadataCommand}"/>
+            </MenuItem>
+            <MenuItem Header="Excel">
+                <MenuItem Header="Selected To Excel" Command="{Binding SelectedToExcelCommand}"/>
+            </MenuItem>
+        </Menu>
+        <local:PhotoListControl Grid.Row="1" Margin="4,5,4,6" DataContext="{Binding ListContext}" />
+        <Border Grid.Row="2" Style="{StaticResource ActionPanelBorder}">
+            <WrapPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Command="{Binding RefreshDataCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="_Refresh" />
+                <Button Command="{Binding EditSelectedContentCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="_Edit" />
+                <Button Command="{Binding NewContentFromFilesCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="_New from Files" />
+                <Button Command="{Binding NewContentFromFilesWithAutosaveCommand}"
+                        Style="{StaticResource ActionPanelButton}"
+                        Content="_New w/Autosave" />
+                <Button Command="{Binding NewContentCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="New - Blank" />
+                <Button Command="{Binding GenerateSelectedHtmlCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="_Generate Html" />
+                <Button Command="{Binding PhotoCodesToClipboardForSelectedCommand}"
+                        Style="{StaticResource ActionPanelButton}" Content="_Code to Clipboard" />
+                <Button Command="{Binding OpenUrlForSelectedCommand}" Style="{StaticResource ActionPanelButton}"
+                        Content="_Open Selected In Browser" />
+                <Button Command="{Binding GeneratePhotoListCommand}" Style="{StaticResource ActionPanelButton}">Generate Photo List</Button>
+                <Button Command="{Binding OpenUrlForPhotoListCommand}" Style="{StaticResource ActionPanelButton}">Open List in Browser</Button>
+                <Button Command="{Binding ForcedResizeCommand}" Style="{StaticResource ActionPanelButton}">Clean and Resize</Button>
+                <Button Command="{Binding DeleteSelectedCommand}" Style="{StaticResource ActionPanelButton}">Delete</Button>
+                <Button Command="{Binding ViewHistoryCommand}" Style="{StaticResource ActionPanelButton}">View History</Button>
+                <Button Command="{Binding ExtractNewLinksInSelectedCommand}" Style="{StaticResource ActionPanelButton}">Extract Links</Button>
+            </WrapPanel>
+        </Border>
+        <status:StatusControl
+            Grid.Row="0"
+            Grid.RowSpan="3"
+            d:IsHidden="true"
+            DataContext="{Binding StatusContext}" />
+    </Grid>
+</UserControl>

@@ -1,0 +1,10 @@
+﻿@using AcBlog.UI.Components.Markdown
+
+<article class="markdown-body">
+    <StardustDL.RazorComponents.Markdown.MarkdownRenderer Value="@Document.Raw" />
+</article>
+
+@code {
+    [Parameter]
+    public Document Document { get; set; }
+}

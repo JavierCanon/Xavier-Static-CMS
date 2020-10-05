@@ -1,0 +1,84 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="XavierCMSWeb.Views.Masters.SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevExpress ASP.NET project</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" /> 
+    <link href="~/Content/Site.css" rel="stylesheet" /> 
+
+    <script type="text/javascript" src="/Scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/Scripts/popper.min.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap.min.js"></script>
+</head>
+<body>
+    <form runat="server">
+        
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+                <div class="container">
+                    <div>                        
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Project name</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="topMenu">
+                        <dx:BootstrapMenu ID="TopMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
+                            <CssClasses Control="top-menu" Menu="navbar-nav" />
+                            <Items>
+                                <dx:BootstrapMenuItem Text="Home" Name="Home">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="About" Name="About">
+                                </dx:BootstrapMenuItem>
+                                <dx:BootstrapMenuItem Text="Contact" Name="Contact">
+                                </dx:BootstrapMenuItem>
+                            </Items>
+                        </dx:BootstrapMenu>
+                        <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                            <AnonymousTemplate>
+                                <dx:BootstrapMenu ID="AnonymousMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
+                                    <CssClasses Control="top-auth-menu" Menu="navbar-nav" />
+                                    <Items>                                
+                                        <dx:BootstrapMenuItem Text="Register" Name="Register" NavigateUrl="Account/Register.aspx">
+                                        </dx:BootstrapMenuItem>
+                                        <dx:BootstrapMenuItem Text="Login" Name="Login" NavigateUrl="Account/Login.aspx">
+                                        </dx:BootstrapMenuItem>
+                                    </Items>
+                                </dx:BootstrapMenu>   
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                <dx:BootstrapMenu ID="LoggedInMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu" OnItemClick="LoggedInMenuMenu_ItemClick">
+                                    <CssClasses Control="top-auth-menu" Menu="navbar-nav" />
+                                    <Items>
+                                        <dx:BootstrapMenuItem Text="" Name="UserName">
+                                            <Template>
+                                            
+
+                                            <asp:LoginName ID="HeadLoginName" runat="server" />
+                                                                                        </Template>
+                                        </dx:BootstrapMenuItem>
+                                        <dx:BootstrapMenuItem Text="Logout" Name="Logout">
+                                        </dx:BootstrapMenuItem>
+                                    </Items>
+                                </dx:BootstrapMenu> 
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container">
+                <asp:ContentPlaceHolder ID="Content" runat="server">
+                </asp:ContentPlaceHolder>
+            
+                <hr>
+
+                <footer>
+                    <p>&copy; <%: DateTime.Now.Year %> - DevExpress ASP.NET project copyright</p>
+                </footer>
+            </div>
+    </form>
+</body>
+</html>
